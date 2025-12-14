@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "酒店",
+  "usingComponents": {
+    "custom-hotel-recommend": "../../components/CustomHotelRecommend",
+    "page-skeleton": "./components/PageSkeleton"
+  }
+}

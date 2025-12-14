@@ -1,0 +1,1 @@
+<view class="navbar" style="{{'padding-top:' + b}}"><view class="logo"><text class="logo-title">重庆旅游</text><text class="logo-text">美丽 · 重庆 · 自然</text></view><view class="search"><input class="uni-input" focus placeholder="输入景点名称" bindinput="{{a}}"/></view></view>

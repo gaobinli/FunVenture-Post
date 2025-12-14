@@ -1,0 +1,64 @@
+"use strict";
+const common_vendor = require("../common/vendor.js");
+const services_food = require("../services/food.js");
+require("../utils/http.js");
+require("../stores/index.js");
+require("../stores/modules/member.js");
+const _sfc_main = /* @__PURE__ */ common_vendor.defineComponent({
+  __name: "CustomFoodRecommend",
+  setup(__props, { expose }) {
+    const pageParams = {
+      currentPage: 1,
+      pageSize: 5
+    };
+    const foodList = common_vendor.ref([]);
+    const finish = common_vendor.ref(false);
+    const getHomeScenicSpotRecommendData = async () => {
+      if (finish.value === true) {
+        return common_vendor.index.showToast({ icon: "none", title: "没有更多数据~" });
+      }
+      let params = {
+        "qp-name-like": searchValue.value,
+        ...pageParams
+      };
+      const res = await services_food.getFoodAPI(params);
+      foodList.value.push(...res.data.list);
+      if (pageParams.currentPage < res.data.totalPage) {
+        pageParams.currentPage++;
+      } else {
+        finish.value = true;
+      }
+    };
+    const resetData = () => {
+      pageParams.currentPage = 1;
+      foodList.value = [];
+      finish.value = false;
+    };
+    const searchValue = common_vendor.ref("");
+    common_vendor.onMounted(() => {
+      getHomeScenicSpotRecommendData();
+    });
+    expose({
+      searchValue,
+      resetData,
+      getMore: getHomeScenicSpotRecommendData
+    });
+    return (_ctx, _cache) => {
+      return {
+        a: common_vendor.f(foodList.value, (item, k0, i0) => {
+          return {
+            a: item.url,
+            b: common_vendor.t(item.name),
+            c: common_vendor.t(item.shortRecommend),
+            d: item.id,
+            e: `/pages/food/foodDetail?id=${item.id}`
+          };
+        }),
+        b: common_vendor.t(finish.value ? "没有更多数据~" : "正在加载...")
+      };
+    };
+  }
+});
+const Component = /* @__PURE__ */ common_vendor._export_sfc(_sfc_main, [["__file", "D:/gp/2026016-重庆旅游微信小程序的设计与实现/trip-hub-mp/src/components/CustomFoodRecommend.vue"]]);
+wx.createComponent(Component);
+//# sourceMappingURL=CustomFoodRecommend.js.map

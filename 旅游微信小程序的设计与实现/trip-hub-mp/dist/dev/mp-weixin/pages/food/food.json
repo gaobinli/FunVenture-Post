@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "美食",
+  "usingComponents": {
+    "custom-food-recommend": "../../components/CustomFoodRecommend",
+    "page-skeleton": "./components/PageSkeleton"
+  }
+}

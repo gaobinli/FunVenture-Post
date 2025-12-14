@@ -1,0 +1,285 @@
+/**
+ * 这里是uni-app内置的常用样式变量
+ *
+ * uni-app 官方扩展插件及插件市场（https://ext.dcloud.net.cn）上很多三方插件均使用了这些样式变量
+ * 如果你是插件开发者，建议你使用scss预处理，并在插件代码中直接使用这些变量（无需 import 这个文件），方便用户通过搭积木的方式开发整体风格一致的App
+ *
+ */
+/**
+ * 如果你是App开发者（插件使用者），你可以通过修改这些变量来定制自己的插件主题，实现自定义主题功能
+ *
+ * 如果你的项目同样使用了scss预处理，你也可以直接在你的 scss 代码中使用如下变量，同时无需 import 这个文件
+ */
+/* 颜色变量 */
+/* 行为相关颜色 */
+/* 文字基本颜色 */
+/* 背景颜色 */
+/* 边框颜色 */
+/* 尺寸变量 */
+/* 文字尺寸 */
+/* 图片尺寸 */
+/* Border Radius */
+/* 水平间距 */
+/* 垂直间距 */
+/* 透明度 */
+/* 文章场景相关 */
+page.data-v-f8ba33b5 {
+  background-color: #f7f7f8;
+  height: 100%;
+}
+.viewport.data-v-f8ba33b5 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #f7f7f8;
+}
+
+/* 导航栏 */
+.navbar.data-v-f8ba33b5 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 44px;
+  padding: 0 16px;
+  background-color: #fff;
+  border-bottom: 1rpx solid #eee;
+}
+.navbar .back.data-v-f8ba33b5 {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #28bb9c;
+}
+.navbar .back .back-icon.data-v-f8ba33b5 {
+  font-size: 32px;
+  font-weight: bold;
+}
+.navbar .title.data-v-f8ba33b5 {
+  flex: 1;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+}
+.navbar .placeholder.data-v-f8ba33b5 {
+  width: 44px;
+}
+
+/* 余额卡片 */
+.balance-card.data-v-f8ba33b5 {
+  margin: 30rpx 20rpx;
+  padding: 40rpx 30rpx;
+  background: linear-gradient(135deg, #28bb9c 0%, #1e9b7c 100%);
+  border-radius: 10rpx;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 4rpx 15rpx rgba(40, 187, 156, 0.3);
+}
+.balance-card .balance-title.data-v-f8ba33b5 {
+  font-size: 24rpx;
+  opacity: 0.9;
+  margin-bottom: 16rpx;
+}
+.balance-card .balance-amount.data-v-f8ba33b5 {
+  font-size: 64rpx;
+  font-weight: bold;
+  margin-bottom: 12rpx;
+  letter-spacing: 2rpx;
+}
+.balance-card .balance-description.data-v-f8ba33b5 {
+  font-size: 20rpx;
+  opacity: 0.8;
+}
+
+/* 充值按钮 */
+.recharge-button-wrapper.data-v-f8ba33b5 {
+  padding: 0 20rpx 30rpx;
+}
+.recharge-button-wrapper .recharge-button.data-v-f8ba33b5 {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  background-color: #28bb9c;
+  color: #fff;
+  font-size: 30rpx;
+  border-radius: 8rpx;
+  border: none;
+}
+
+/* 充值表单 */
+.recharge-form.data-v-f8ba33b5 {
+  background-color: #fff;
+  margin: 20rpx;
+  padding: 30rpx;
+  border-radius: 10rpx;
+  box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.1);
+}
+.recharge-form .form-title.data-v-f8ba33b5 {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 20rpx;
+}
+.recharge-form.data-v-f8ba33b5 {
+  /* 金额输入 */
+}
+.recharge-form .amount-input-wrapper.data-v-f8ba33b5 {
+  display: flex;
+  align-items: center;
+  height: 80rpx;
+  background-color: #f5f5f5;
+  border-radius: 8rpx;
+  padding: 0 20rpx;
+  margin-bottom: 30rpx;
+  border: 2rpx solid #e5e5e5;
+}
+.recharge-form .amount-input-wrapper .currency-symbol.data-v-f8ba33b5 {
+  font-size: 32rpx;
+  color: #28bb9c;
+  font-weight: bold;
+  margin-right: 10rpx;
+}
+.recharge-form .amount-input-wrapper .amount-input.data-v-f8ba33b5 {
+  flex: 1;
+  height: 80rpx;
+  font-size: 32rpx;
+  background-color: transparent;
+  border: none;
+}
+.recharge-form .amount-input-wrapper .amount-input .placeholder.data-v-f8ba33b5 {
+  color: #999;
+}
+.recharge-form.data-v-f8ba33b5 {
+  /* 快速充值 */
+}
+.recharge-form .quick-amount.data-v-f8ba33b5 {
+  margin-bottom: 30rpx;
+}
+.recharge-form .quick-amount .quick-title.data-v-f8ba33b5 {
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 12rpx;
+}
+.recharge-form .quick-amount .quick-buttons.data-v-f8ba33b5 {
+  display: flex;
+  gap: 12rpx;
+}
+.recharge-form .quick-amount .quick-buttons .quick-btn.data-v-f8ba33b5 {
+  flex: 1;
+  height: 60rpx;
+  line-height: 60rpx;
+  text-align: center;
+  background-color: #f5f5f5;
+  color: #28bb9c;
+  font-size: 24rpx;
+  border: 2rpx solid #ddd;
+  border-radius: 6rpx;
+}
+.recharge-form .quick-amount .quick-buttons .quick-btn.data-v-f8ba33b5:active {
+  background-color: #e8f5f1;
+  border-color: #28bb9c;
+}
+.recharge-form.data-v-f8ba33b5 {
+  /* 支付方式 */
+}
+.recharge-form .payment-method.data-v-f8ba33b5 {
+  margin-bottom: 30rpx;
+}
+.recharge-form .payment-method .method-title.data-v-f8ba33b5 {
+  font-size: 24rpx;
+  color: #666;
+  margin-bottom: 16rpx;
+}
+.recharge-form .payment-method .method-list.data-v-f8ba33b5 {
+  display: flex;
+  gap: 16rpx;
+}
+.recharge-form .payment-method .method-list .method-item.data-v-f8ba33b5 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20rpx;
+  background-color: #f5f5f5;
+  border: 2rpx solid #ddd;
+  border-radius: 8rpx;
+  position: relative;
+}
+.recharge-form .payment-method .method-list .method-item.active.data-v-f8ba33b5 {
+  background-color: #e8f5f1;
+  border-color: #28bb9c;
+}
+.recharge-form .payment-method .method-list .method-item.active .method-label.data-v-f8ba33b5 {
+  color: #28bb9c;
+}
+.recharge-form .payment-method .method-list .method-item .method-icon.data-v-f8ba33b5 {
+  font-size: 40rpx;
+  margin-bottom: 8rpx;
+}
+.recharge-form .payment-method .method-list .method-item .method-label.data-v-f8ba33b5 {
+  font-size: 20rpx;
+  color: #666;
+}
+.recharge-form .payment-method .method-list .method-item .method-check.data-v-f8ba33b5 {
+  position: absolute;
+  top: 8rpx;
+  right: 8rpx;
+  width: 28rpx;
+  height: 28rpx;
+  background-color: #28bb9c;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16rpx;
+  font-weight: bold;
+}
+.recharge-form.data-v-f8ba33b5 {
+  /* 操作按钮 */
+}
+.recharge-form .form-buttons.data-v-f8ba33b5 {
+  display: flex;
+  gap: 16rpx;
+  margin-top: 30rpx;
+}
+.recharge-form .form-buttons .button.data-v-f8ba33b5 {
+  flex: 1;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  font-size: 28rpx;
+  border-radius: 8rpx;
+  border: none;
+}
+.recharge-form .form-buttons .button.cancel.data-v-f8ba33b5 {
+  background-color: #f5f5f5;
+  color: #666;
+}
+.recharge-form .form-buttons .button.confirm.data-v-f8ba33b5 {
+  background-color: #28bb9c;
+  color: #fff;
+}
+
+/* 充值说明 */
+.transaction-notice.data-v-f8ba33b5 {
+  margin: 20rpx;
+  padding: 20rpx;
+  background-color: #fff;
+  border-radius: 10rpx;
+}
+.transaction-notice .notice-title.data-v-f8ba33b5 {
+  font-size: 28rpx;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 16rpx;
+}
+.transaction-notice .notice-content .notice-item.data-v-f8ba33b5 {
+  font-size: 24rpx;
+  color: #666;
+  line-height: 40rpx;
+  padding-left: 10rpx;
+}
