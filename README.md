@@ -1,6 +1,7 @@
 ## 旅游综合服务平台
 **开发角色**：全栈开发
 **项目周期**：2023.12.7-2024.03.22
+
 **技术栈**：Spring Boot、Spring Security、MyBatis Plus、MySQL、Druid、Vue3、UniApp、Element Plus、Pinia、JWT、MapStruct、Swagger
 
 ### 项目描述
